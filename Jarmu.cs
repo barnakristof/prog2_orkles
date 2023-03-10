@@ -5,7 +5,7 @@ namespace Orokles
     {
         char azonosito;
         float x, y;
-        Terkep terkep;
+        protected Terkep terkep;
 
         public Jarmu(char azonosito, float x, float y, Terkep terkep)
         {

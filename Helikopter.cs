@@ -32,7 +32,7 @@ namespace Orokles
         }
         
 
-        public Helikopter(Terkep terkep, float x, float y) : base('H', x, y, terkep)
+        public Helikopter( float x, float y,Terkep terkep) : base('H', x, y, terkep)
         {
             
         }

@@ -27,11 +27,24 @@ namespace Orokles
         static void Teszt3()
         {
             Terkep terkep = new Terkep(20, 20);
-            Helikopter helikopter1 = new Helikopter(terkep, 11, 5);
-            Helikopter helikopter2 = new Helikopter(terkep, 1, 14);
+            Helikopter helikopter1 = new Helikopter(11, 5, terkep);
+            Helikopter helikopter2 = new Helikopter(1, 14, terkep);
             Szimulacio szimulacio = new Szimulacio(4, terkep);
             szimulacio.JarmuFelvetel(helikopter1);
             szimulacio.JarmuFelvetel(helikopter2);
+            szimulacio.Fut();
+        }
+
+        static void Teszt4()
+        {
+            Terkep terkep = new Terkep(20, 20);
+            Helikopter helikopter = new Helikopter(11, 5, terkep);
+            Auto auto = new Auto(11, 6, terkep);
+            Tank tank = new Tank(30, 10, 8, terkep);
+            Szimulacio szimulacio = new Szimulacio(4, terkep);
+            szimulacio.JarmuFelvetel(helikopter);
+            szimulacio.JarmuFelvetel(auto);
+            szimulacio.JarmuFelvetel(tank);
             szimulacio.Fut();
         }
 
@@ -39,11 +52,8 @@ namespace Orokles
         {
             //Teszt1();
             //Teszt2();
-            Teszt3();
-            /*Console.WriteLine("asdasdasdasdas");
-            System.Threading.Thread.Sleep(1500);
-            Console.Clear();
-            Console.Read();*/
+            //Teszt3();
+            Teszt4();
         }
     }
 }

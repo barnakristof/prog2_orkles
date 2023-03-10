@@ -20,11 +20,14 @@ namespace Orokles
                 {
                     talalat = true;
                 }
-                i++;
+                else
+                {
+                    i++;
+                }
             }
-            if (i < jarmuvek.Length)
+            if (i < jarmuvekN)
             {
-                return jarmuvek[i-1].Azonosito;
+                return jarmuvek[i].Azonosito;
             }
             else
             {

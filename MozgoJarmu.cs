@@ -8,7 +8,7 @@ namespace Orokles
         public float IranyX { get { return iranyX; } }
         public float IranyY { get { return iranyY; } }
 
-        protected void UjIranyVektor(float iranyX, float iranyY)
+        public void UjIranyVektor(float iranyX, float iranyY)
         {
             this.iranyX = iranyX;
             this.iranyY = iranyY;

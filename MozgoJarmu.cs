@@ -3,8 +3,8 @@ namespace Orokles
 {
     abstract class MozgoJarmu : Jarmu 
     {
-        float iranyX = 1;
-        float iranyY = 1;
+        float iranyX;
+        float iranyY;
         public float IranyX { get { return iranyX; } }
         public float IranyY { get { return iranyY; } }
 
@@ -18,7 +18,8 @@ namespace Orokles
 
         public MozgoJarmu(char azonosito, float x, float y, Terkep terkep) : base(azonosito, x, y, terkep)
         {
-
+            this.iranyX = 1;
+            this.iranyY = 1;
         }
     }
 }

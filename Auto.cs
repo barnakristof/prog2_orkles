@@ -5,7 +5,7 @@ namespace Orokles
     {
         public Auto()
         {
-
+            //idd ki te rakás szar
         }
     }
 }

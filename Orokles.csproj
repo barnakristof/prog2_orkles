@@ -51,6 +51,7 @@
     <Compile Include="MozgoJarmu.cs" />
     <Compile Include="Helikopter.cs" />
     <Compile Include="Szimulacio.cs" />
+    <Compile Include="Auto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

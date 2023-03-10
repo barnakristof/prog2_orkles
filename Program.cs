@@ -39,11 +39,11 @@ namespace Orokles
         {
             //Teszt1();
             //Teszt2();
-            //Teszt3();
-            Console.WriteLine("asdasdasdasdas");
+            Teszt3();
+            /*Console.WriteLine("asdasdasdasdas");
             System.Threading.Thread.Sleep(1500);
             Console.Clear();
-            Console.ReadLine();
+            Console.Read();*/
         }
     }
 }

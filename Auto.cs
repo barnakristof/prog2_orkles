@@ -14,19 +14,19 @@ namespace Orokles
             float kulonbseg = terkep.Magassag(X, Y) - terkep.Magassag(X + IranyX, Y + IranyY);
             if (kulonbseg < 0)
             {
-                X += IranyX * 2;
-                Y += IranyY * 2;
+                UjIranyVektor(IranyX * 2, IranyY * 2);
             }
             else if (kulonbseg > 0)
             {
-                X += IranyX / 2;
-                Y += IranyY / 2;
+                UjIranyVektor(IranyX / 2, IranyY / 2);
             }
             else
             {
-                X += IranyX;
-                Y += IranyY;
+                UjIranyVektor(1, 1);
             }
+
+            X += IranyX;
+            Y += IranyY;
         }
 
         public Auto(float x, float y, Terkep terkep, char azonosito = 'A') : base(azonosito, x, y, terkep)
